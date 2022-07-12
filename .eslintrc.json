@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "settings": {},
+  "env": {
+    "browser": true, // Enables browser globals like window and document
+    "amd": true, // Enables require() and define() as global variables as per the amd spec.
+    "node": true, // Enables Node.js global variables and Node.js scoping.
+    "jest/globals": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020, // Use the latest ecmascript standard
+    "sourceType": "script"
+  },
+  "extends": ["airbnb", "prettier", "plugin:jest/all"],
+  "plugins": ["prettier", "testing-library", "jest"],
+  "rules": {
+    "prettier/prettier": ["warn", {}, { "usePrettierrc": true }], // Use .prettierrc file as source
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "import/no-unresolved": 2,
+    "no-undefined": 2
+  }
+}
