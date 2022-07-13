@@ -16,16 +16,15 @@ WTF:0
 WTF: 3
 ✅: tech debt
 ✅: create the first move for the X player
-🚧: create random first move for the X player
-🚧: commit
+✅: commit
 
 ## Pomodoro 3
 
 WTF:
-🚧: create random first move for the X player
-TODO: create a 2 seconds timeout after the turn
-TODO: create the first move for the X player
-TODO: create random first move for the X player
+✅: create random first move for the X player
+❌: create a 2 seconds timeout after the turn
+🚧: create the first move for the O player
+TODO: create random first move for the O player
 TODO: commit
 
 ## Pomodoro 4
