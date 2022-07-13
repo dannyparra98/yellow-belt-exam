@@ -11,18 +11,20 @@ const dummy = (board, move, player) => {
   console.log('Board Created.');
   console.log('The game will start with player X');
 
+  console.log(move);
+  console.log(player);
   if (move > -1 && player == 'X') {
     console.log('Player X:');
     board[boardPositions[move]] = 'X';
     boardPositions.splice(move, 1);
-    result.splice(move, result.length);
+    result.splice(0, result.length);
     setBoard(board);
     console.log(result);
-  } else if (move > -1 && player == 'O') {
+  } else {
     console.log('Player O:');
     board[boardPositions[move]] = 'O';
     boardPositions.splice(move, 1);
-    result.splice(move, result.length);
+    result.splice(0, result.length);
     setBoard(board);
     console.log(result);
   }
